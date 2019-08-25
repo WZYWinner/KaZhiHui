@@ -1,0 +1,12 @@
+<view class="creditCardModify">
+    <!-- <van-cell-group> -->
+    <van-cell title="持卡人" value="{{userInfo.name}}" />
+    <van-cell title="身份证号" value="{{ userInfo.idCard }}" />
+    <van-cell title="银行预留手机号" value="{{userInfo.phone}}" />
+    <van-cell title="信用卡号" value="{{creditCardModifyList.creditCardId}}" />
+    <van-cell title="有效期" value="{{creditCardModifyList.expireDate}}" />
+    <van-field value="{{ creditCardModifyList.StatementDate }}" input-align="right" required clearable label="账单日" placeholder="如22，请输入22"/>
+    <van-field value="{{creditCardModifyList.RepaymentDate}}" input-align="right" required clearable label="还款日" placeholder="如06，请输入6" />
+    <!-- 提交按钮 -->
+    <view class="tijiaoBut">立即提交</view>
+</view>

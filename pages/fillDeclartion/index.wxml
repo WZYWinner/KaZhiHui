@@ -1,0 +1,57 @@
+<view class="fillDeclartion">
+    <view class="cusWarning">请提交正确的券码等信息，恶意提交无关券码，一经核实将扣款或封号</view>
+    <!-- 产品类别 -->
+    <!-- <form enctype="multipart/form-data"> -->
+    <form bindsubmit="formSubmit">
+        <view class="">
+            <input hidden="{{true}}" type="text" name="ProductID" value="{{radio}}" />
+            <!-- <input hidden="{{true}}" type="text" name="Token" value="{{token}}" /> -->
+            <input hidden="{{true}}" type="text" name="BankID" value="{{bankId}}" />
+            <input hidden="{{true}}" type="text" name="Memo" value="{{Memo}}" />
+            <input hidden="{{true}}" type="text" name="SubmitCode" value="{{redeemCodevalue}}" />
+            <input hidden="{{true}}" type="text" name="CodeTime" value="{{timer}}" />
+            <!-- <input hidden="{{true}}" type="text" name="Icon" value="{{icon}}" /> -->
+        </view>
+        
+        
+        <view class="productCategory">
+            <view class="titleText">产品类别</view>
+            <van-radio-group value="{{ radio }}" bind:change="onradioChange">
+                <van-cell-group>
+                    <van-cell wx:for="{{proradList}}" wx:key="index" title="{{item.name}}" value-class="value-class" clickable data-name="{{item.id}}" bind:click="onradioClick">
+                        <van-radio  />
+                    </van-cell>
+                </van-cell-group>
+            </van-radio-group>
+        </view>
+        <!-- 上传条形码或二维码 -->
+        <view class="prodEqCodeView" wx:if="{{submitType == 2}}">
+            <!-- 截图示范 -->
+            <view class="jietu">
+                <view class="titleText">截图示范</view>
+                <image class="jietuImg" bind:tap="previewImg" data-url="https://www.kzhapp.cn/Imgs/webchat/images/exchange/services.png" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+            </view>
+            <!-- 上传二维码 -->
+            <view class="titleText">上传条形码或二维码截图</view>
+            <view class="prodEqCode">
+                <button class="upLoadBtn" bindtap="chooseEqCodeimage"></button>
+                <image wx:if="{{eqcodeimage}}" class="q-image" src="{{eqcodeimage}}" id="imageEq"></image>
+                <image wx:else class="q-imageNo" src="https://www.kzhapp.cn/Imgs/webchat/images/exchange/xinjianimg.png"></image>
+                <!-- <view class="imgText" wx:if="{{zhizhaoimage}}" hover-class="none" hover-stop-propagation="false"></view> -->
+                <!-- <view class="imgText" wx:else hover-class="none" hover-stop-propagation="false">
+                    上传
+                </view> -->
+            </view>
+        </view>
+        <!-- 兑换码 -->
+        <view class="redeemCode">
+            <view class="titleText">兑换码</view>
+            <van-field value="{{ redeemCodevalue }}" placeholder="复制整条兑换码信息" bind:change="onredeemCodeChange" />
+        </view>
+        <!-- 提交 -->
+        <view class="declarSave">
+            <!-- <button class="saveBut"  bind:tap="onSave">提交</button> -->
+            <button class="saveBut" form-type="submit">提交</button>
+        </view>
+    </form>
+</view>

@@ -1,0 +1,112 @@
+page{
+    background-color: #eee;
+}
+.exchangeDetail{
+    width: calc(100% - 30px);
+    margin: 5px auto;
+}
+.DetailTable{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+.tableFont{
+    font-size: 12px;
+}
+.tableTh{
+    width: 100%;
+    border-bottom: 1px solid #999;
+    box-sizing: border-box;
+    color: #333;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+.tableThNum{
+    width: 25%;
+    text-align: center;
+    /* background-color: rgb(241, 101, 101); */
+}
+.tableThshangpin{
+    width: 35%; 
+    text-align: center;
+    /* background-color: rgb(47, 228, 62);  */
+}
+.tableThcishu{
+    width: 16%;
+    text-align: center;
+    /* background-color: rgb(44, 21, 172); */
+}
+.tableThprice{
+    width: 24%;
+    text-align: center;
+    /* background-color: rgb(199, 119, 150); */
+}
+.tableBody{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    overflow-y:scroll;
+}
+.tableTr{
+    width: 100%;
+    color: #333;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+.textRed{
+    color: red;
+}
+.processView{
+    width: 100%;
+}
+.processImg{
+    width: 690rpx;
+    margin-top: 10px;
+}
+/* 底部 */
+.bottomView{
+    width: 100%;
+    padding: 5px 0px;
+    background-color: #fff;
+    /* height: 50px; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+.bottomLeft, .bottomRight{
+    width: 44%;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+}
+.bottomLeft{
+    border: 1px solid #333;
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+.bottomRight{
+    background-color: #CBB585;
+    color: #fff;
+    margin-right: 15px;
+}
+.kefuphone{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -23px;
+    left: 0px;
+}
+.zixuntext{
+    display: inline-block;
+    position: relative;
+    top: -30px;
+}

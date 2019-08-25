@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "定制计划",
+    "navigationBarBackgroundColor": "#CCB895",
+    "usingComponents": {
+      "van-cell-group": "/miniprogram_npm/vant-weapp/cell-group/index",
+      "van-cell": "/miniprogram_npm/vant-weapp/cell/index",
+      "van-field": "/miniprogram_npm/vant-weapp/field/index"
+    }
+  }

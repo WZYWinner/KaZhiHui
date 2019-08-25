@@ -1,0 +1,24 @@
+page{
+    background-color: #eee;
+}
+.setPassword{
+    width: calc(100% - 30px);
+    margin: 30px auto;
+}
+.field-index--van-field{
+    border-radius: 5px !important;
+    margin-bottom: 15px !important;
+}
+.van-button--primary{
+    background-color: #CBB585 !important;
+    border: none !important;
+}
+.pwdSave{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #CBB585;
+    font-size: 14px;
+    margin-top: 35px;
+}

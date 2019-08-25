@@ -1,0 +1,36 @@
+<view class="wenancopywriting">
+    <!-- 有内容 -->
+    <view class="" wx:if="{{copywritingList}}">
+        <view class="copywritingList" wx:for="{{copywritingList}}" wx:key="index">
+        <view class='shop_left' style="white-space:pre-line">{{item.Content}}</view>
+        <view class="copywritImgView">
+            <image class="copywritImg" src="{{item.Examine}}"></image>
+        </view>
+        <!-- 复制 -->
+        <view class="copyView">
+            <label class='lab_copy copyTextBtn' data-text="{{item.Content}}" bind:tap="copyTextBtn">
+                复制文本
+            </label>
+            <view class="haveImg" wx:if="{{item.Examine.length != 0}}">
+                <label class='lab_copy saveImgBtn' data-url="{{item.Examine}}" bind:tap='saveImgBtn' wx:if="{{!isAuthSavePhoto}}">
+                    保存图片
+                </label>
+                <label class='lab_copy saveImgBtn' data-url="{{item.Examine}}" wx:else bind:tap="showModal">
+                    保存图片
+                </label>
+            </view>
+            <view class="" wx:else>
+                <label class='lab_copy saveImgBtn'>
+                    保存图片
+                </label>
+            </view>
+        </view>
+    </view>
+    </view>
+    <!-- 无内容 -->
+    <view class="NocopywritingList" wx:else>
+        <image class="Noimg" src="../images/nolistImg.png"></image>
+    </view>
+    <!-- 提交文本 -->
+    <view class="submitText" bind:tap="onsubmitText">提交文本</view>
+</view>

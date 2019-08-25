@@ -1,0 +1,24 @@
+<view class="supportBankView">
+    <view class="supportBank">
+    <view class="supportBankList">
+        <image class="backListImg" src="../images/exchange/bankImg.png"></image>
+        <view class="noSup">不支持</view>
+    </view>
+    <view class="supportBankList">
+        <image class="backListImg" src="../images/exchange/bankImg.png"></image>
+        <view class="noSup">不支持</view>
+    </view>
+    <view class="supportBankList">
+        <image class="backListImg" src="../images/exchange/bankImg.png"></image>
+        <view class="noSup">不支持</view>
+    </view>
+    <view class="supportBankList">
+        <image class="backListImg" src="../images/exchange/bankImg.png"></image>
+        <view class="noSup">不支持</view>
+    </view>
+     <view class="supportBankList">
+        <image class="backListImg" src="../images/exchange/bankImg.png"></image>
+        <view class="noSup">不支持</view>
+    </view>
+</view>
+</view>

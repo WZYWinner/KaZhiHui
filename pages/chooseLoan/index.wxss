@@ -1,0 +1,45 @@
+page{
+    background-color: #eee;
+}
+.chooseLoan{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.loanList{
+    width: 50%;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 62px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    
+}
+.loanList:nth-of-type(odd){
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+}
+.listLeft{
+    width: 40px;
+    margin-left: 15px;
+}
+.ListImg{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+.listRight{
+    width: calc(100% - 70px);
+    margin-left: 7px;
+    /* background-color: aqua; */
+    margin-top: 5px;
+}
+.loanName{
+    font-size: 14px;
+}
+.loanDesc{
+    font-size: 11px;
+}

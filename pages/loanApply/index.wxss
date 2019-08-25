@@ -1,0 +1,24 @@
+page{
+    background-color: #eee;
+}
+.immediApply{
+    width: calc(100% - 30px);
+    margin: 20px auto;
+}
+.field-index--van-field{
+    border-radius: 10px !important;
+    margin-bottom: 10px;
+}
+.tishi{
+    font-size: 11px;
+    margin-top: 20px;
+}
+.nextBut{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: #CBB585;
+    margin-top: 20px;
+}

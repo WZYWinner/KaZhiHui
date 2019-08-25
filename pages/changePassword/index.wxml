@@ -1,0 +1,11 @@
+<view class="changePassword" hover-class="none" hover-stop-propagation="false">
+<view class="content">
+    <view class="img"><image src="https://www.kzhapp.cn/Imgs/webchat/images/suo.png"></image></view>
+</view>
+<view class="section">
+  <input class="Password" bindinput='watchOldPassword' type="password" placeholder="请输入旧密码" auto-focus/>
+  <input bindinput='watchPassWord' class="Password" type="password" placeholder="请输入新密码" auto-focus/>
+  <input bindinput='watchPassWord1' class="Password" type="password" placeholder="请再次输入新密码" auto-focus/>
+</view>
+<button class="commit" bind:tap="confirm">确认</button>
+</view>

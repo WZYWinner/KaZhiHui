@@ -1,0 +1,49 @@
+<view class="planDetail">
+    <view class="headerTop">
+        <image class="backImg" src="../images/detail.png" mode="widthFix"></image>
+        <view class="htop">
+            <image class="prImg" src="../images/merchantReceipt/recodekahao.png" mode="widthFix"></image>
+            <text class="htitle">计划总金额</text>
+        </view>
+        <view class="allPrice">15550.00</view>
+        <view class="bankName">兴业银行(9114)</view>
+        <view class="planInfo">
+            <view class="planInfoTop">
+                <view class="planInfoTopLeft">
+                    <view class="bishuFee">笔数费：4.00(4次)</view>
+                    <view class="bishuFee">还款手续费：122.84</view>
+                    <view class="bishuFee">周转金手续费：1.23</view>
+                </view>
+                <view class="planInfoTopRight">
+                    未完成金额：15550.00
+                </view>
+            </view>
+        </view>
+        <view class="shouxuFee">
+            手续费：170.06
+            <view class="zhouzhuanfee">
+                周转金：2639.00
+            </view>
+        </view>
+    </view>
+    <view class="detailListView">
+        <view class="detailList">
+            <view class="numSta">
+                第1笔
+                <view class="status" style="color:#078B60;">
+                    已完成
+                </view>
+            </view>
+            <view class="xiaofeiInfo">
+                <view class="xiaofeitext">消费</view>
+                <view class="xiaofeiprice">-2341.00</view>
+                <view class="xiaofeitime">2019/8/20 10:11:45</view>
+            </view>
+            <view class="xiaofeiInfo">
+                <view class="huankuantext">还款</view>
+                <view class="huankuanprice">-2341.00</view>
+                <view class="xiaofeitime">2019/8/20 10:11:45</view>
+            </view>
+        </view>
+    </view>
+</view>

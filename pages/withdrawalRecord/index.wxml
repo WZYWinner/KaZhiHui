@@ -1,0 +1,30 @@
+<view class="withdrawalRecord" hover-class="none" hover-stop-propagation="false">
+    
+    <view class="txInfo">
+        <view class="txInfo_top">
+            <view class="txInfo_top_left">
+                <view>
+                   提现金额 
+                </view>
+            </view>
+        </view>
+        
+            <view class="txInfo_bottom">
+            <view class="flex">
+               <view class="">
+                   <image class="cardImg" src="../images/merchantReceipt/recodekahao.png"></image>
+               </view>
+            <view class="text">
+                提现成功
+            </view>
+            </view>
+            <view class="txNum">
+                666
+            </view>
+          
+        </view>
+    </view>
+
+        
+    
+</view>

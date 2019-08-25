@@ -1,0 +1,90 @@
+page {
+    background-color: #eee;
+}
+
+.reservaPlan {
+    width: calc(100% - 50px);
+    margin: 20px auto;
+}
+
+.planList {
+    width: 100%;
+}
+
+.van-tabs__wrap {
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+
+.van-tab__pane {
+    width: 100% !important;
+    height: 515px !important;
+    background-color: #fff !important;
+    padding: 0 15px;
+}
+
+.van-tabs__line {
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+
+.van-tabs__nav--card .van-tab.van-tab--active {
+    color: #fff;
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+/* 列表页 */
+.noStartView{
+    width: 100%;
+}
+.noStartNoList{
+    width: 100%;
+    text-align: center;
+    margin-top: 160px;
+}
+.nolistImg{
+    width: 65px;
+    height: 65px;
+}
+.infoList{
+    padding: 10px;
+    border-bottom: 1px solid rgb(221, 218, 218);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bankInfo{
+    display: flex;
+    align-items: center;
+}
+.bankInfo span{
+    font-size: 14px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.bankImg{
+    width: 20px;
+    height: 20px;
+}
+.status_success{
+    font-size: 11px;
+    color: green;
+}
+.status_false{
+    font-size: 14px;
+    color: gray;
+}
+.infoList span{
+    display: block;
+    padding: 5px 0;
+    font-size: 11px;
+}
+.price{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 11px;
+    margin-top: 10px;
+}
+.price p{
+    color: #F70E00;
+    font-size: 17px;
+}

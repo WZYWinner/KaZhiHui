@@ -1,0 +1,96 @@
+<view class="reservaPlan">
+    <view class="planList">
+        <van-tabs active="{{ planActive }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="审核中">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{noStartList}}">
+                        <view class="infoList" wx:for="{{noStartList}}" wx:key="index">
+                            <view class="header">
+                                <view class="bankInfo">
+                                    <view>
+                                        <image  class="bankImg" src="https://www.kzhapp.cn/Imgs/webchat/images/kzhlog.png"> </image>
+                                    </view>
+                                    <span>{{item.bankName}}</span>
+                                </view>
+                                <view class="status_success">
+                                    处理成功
+                                </view>
+                            </view>
+                            <span>报单编号： {{item.submitID}}</span>
+                            <span>报单时间： {{item.createTime}}</span>
+                            <span>兑换商品： {{item.productName}}</span>
+                            <span>处理时间： {{item.serviceTime}}</span>
+                            <span>处理反馈： {{item.serviceMemo}}</span>
+                            <view class="price">
+                                回购价：<p>￥{{item.price}}</p>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="报单成功">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{implementList}}">
+                        <view class="infoList" wx:for="{{implementList}}" wx:key="index">
+                            <view class="header">
+                                <view class="bankInfo">
+                                    <view>
+                                        <image  class="bankImg" src="https://www.kzhapp.cn/Imgs/webchat/images/kzhlog.png"> </image>
+                                    </view>
+                                    <span>{{item.bankName}}</span>
+                                </view>
+                                <view class="status_success">
+                                    处理成功
+                                </view>
+                            </view>
+                            <span>报单编号： {{item.submitID}}</span>
+                            <span>报单时间： {{item.createTime}}</span>
+                            <span>兑换商品： {{item.productName}}</span>
+                            <span>处理时间： {{item.serviceTime}}</span>
+                            <span>处理反馈： {{item.serviceMemo}}</span>
+                            <view class="price">
+                                回购价：<p>￥{{item.price}}</p>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="报单失败">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{finishList}}">
+                        <view class="infoList" wx:for="{{finishList}}" wx:key="index">
+                            <view class="header">
+                                <view class="bankInfo">
+                                    <view>
+                                        <image  class="bankImg" src="https://www.kzhapp.cn/Imgs/webchat/images/kzhlog.png"> </image>
+                                    </view>
+                                    <span>{{item.bankName}}</span>
+                                </view>
+                                <view class="status_false">
+                                    审核失败
+                                </view>
+                            </view>
+                            <span>报单编号： {{item.submitID}}</span>
+                            <span>报单时间： {{item.createTime}}</span>
+                            <span>兑换商品： {{item.productName}}</span>
+                            <span>处理时间： {{item.serviceTime}}</span>
+                            <span>处理反馈： {{item.serviceMemo}}</span>
+                            <view class="price">
+                                回购价：<p>￥{{item.price}}</p>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>

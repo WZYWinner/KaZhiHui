@@ -1,0 +1,6 @@
+.shareContent {
+    width: 100%;
+}
+.shareImg{
+    width: 100%;
+}

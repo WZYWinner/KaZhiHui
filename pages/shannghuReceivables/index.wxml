@@ -1,0 +1,58 @@
+<view class="shannghuReceivables">
+    <!-- <van-cell-group> -->
+    <van-field value="{{ daozhangKa }}" input-align="right" required clearable label="到账储蓄卡" disabled placeholder="请输入持卡人姓名" bind:change="ondaozhangKaChange" />
+    <view class="jiaoyiXinyong">
+        <view class="xinyongview">
+            <view class="jiaoyiXinyongTitle"><text class="biaoji">*</text> 交易信用卡</view>
+            <view class="jiaoyiXinyongKahao" wx:if="{{xinyongShow}}" bind:tap="onchooseCreditCard">
+                <view class="Kahaoinfo">请选择信用卡号</view>
+                <image class="rightMore" src="../images/rigthmore.png"></image>
+            </view>
+            <view class="jiaoyiXinyongKahao" wx:else>
+                {{xinyongkaName}}
+            </view>
+        </view>
+    </view>
+    <!-- <van-field value="{{ jiaoyiXinyong }}" input-align="right" required clearable label="交易信用卡" placeholder="请输入持卡人身份证号" bind:change="onjiaoyiXinyongChange" /> -->
+    <van-field value="{{ jiaoyiprice }}" input-align="right" required clearable label="交易金额" placeholder="请输入金额" bind:change="onjiaoyipriceChange" />
+    <van-field value="{{ daozhangPrice }}" input-align="right" required clearable label="到账金额" disabled placeholder="" bind:change="ondaozhangPriceChange" />
+    <van-field value="{{ smsCode }}" placeholder="请输入验证码" use-button-slot bind:change="onPhoneCodeChange" wx:if="{{extend == 1 || extend == 6}}">
+        <van-button slot="button" size="small" type="primary" bind:tap="onGetCode" wx:if="{{disable}}">
+            获取验证码
+        </van-button>
+        <van-button slot="button" size="small" type="primary" disabled wx:else>
+            {{daoshuTime}}
+        </van-button>
+    </van-field>
+
+    <view class="jiaoyiXinyong" wx:if="{{extend == 6}}">
+        <view class="xinyongview">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="jiaoyiXinyongTitlePicker"><text class="biaoji">*</text> 区域</view>
+            <view class="jiaoyiXinyongKahaoPicker" wx:if="{{quyuShow}}">
+                <view class="Kahaoinfo">请选择区域(县/区可不选)</view>
+                <image class="rightMore" src="../images/rigthmore.png"></image>
+            </view>
+            <view class="jiaoyiXinyongKahaoPicker" wx:else>
+              {{region[0]}}{{region[1]}}{{region[3]}}
+            </view>
+            </picker>
+        </view>
+    </view>
+
+    <view class="tishitext">
+        金额最高限制为20000.00元,最低为103.00元
+    </view>
+
+    <!-- <view class="pickercont" hover-class="none" hover-stop-propagation="false">
+        <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" data-id="{{classList}}" range="{{multiArray}}">
+            <view class="picker">
+                选择地区：{{region}}
+            </view>
+            <view class="moreJian">></view>
+        </picker> -->
+
+    <!-- </view> -->
+    <!-- 提交按钮 -->
+    <view class="tijiaoBut" bind:tap="onTijiaoBtn">立即提交</view>
+</view>

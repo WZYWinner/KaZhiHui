@@ -1,0 +1,35 @@
+<view class="Setting" hover-class="none" hover-stop-propagation="false">
+<view class="myInfo">
+    <view class="text">我的头像</view>
+    <view class="info" bind:tap="uploadAvatar"><image class="img" src="{{httpImg}}/{{userInfo.headImg}}"></image></view>
+</view>
+    <view class="myInfo">
+        <view class="text">真实姓名</view>
+        <view class="text">{{userInfo.name}}</view>
+    </view>
+    <view class="myInfo">
+        <view class="text">手机号码</view>
+        <view class="text">{{userInfo.phone}}</view>
+    </view>
+    <view class="myInfo">
+        <view class="text">登录密码</view>
+        <view class="right">
+        <view class="text" bind:tap="change">修改</view>
+        <view><image class="img1" src="../images/personalCenter/jiantou2.png"></image></view>
+        </view>
+    </view>
+    <view class="myInfo">
+        <view class="text">实名认证</view>
+        <view class="right" bind:tap="realName">
+            <view class="text1">未实名</view>
+            <view><image class="img1" src="../images/personalCenter/jiantou2.png"></image></view>
+        </view>
+    </view>
+    <view class="myInfo">
+        <view class="text">当前版本</view>
+        <view class="text">V1.2.59</view>
+    </view>
+    <view class="exit" bind:tap="exit">
+        退出登录
+    </view>
+</view>

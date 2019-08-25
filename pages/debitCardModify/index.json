@@ -1,0 +1,9 @@
+{
+    "navigationBarBackgroundColor": "#CCB895",
+    "navigationBarTitleText": "修改信用卡",
+    "usingComponents": {
+        "van-field": "/miniprogram_npm/vant-weapp/field/index",
+        "van-cell": "/miniprogram_npm/vant-weapp/cell/index",
+        "van-button": "/miniprogram_npm/vant-weapp/button/index"
+    }
+}

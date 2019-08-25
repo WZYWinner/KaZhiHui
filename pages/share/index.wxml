@@ -1,0 +1,6 @@
+<view class="shareContent" hover-class="none" hover-stop-propagation="false">
+    <!-- <image class="shareImg" bindload="imageLoad" style="width:{{imageWidth}}px;;height:{{imageHeight}}px;" src="../images/share.jpg">
+        
+    </image> -->
+    
+</view>

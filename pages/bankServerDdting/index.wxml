@@ -1,0 +1,25 @@
+<view class="bankServerDdting">
+    <!-- 信用卡服务热线 -->
+    <view class="bankPhone" bind:tap="onCalling" data-phone="{{Phone}}">信用卡服务热线 <text class="kefu">{{Phone}}</text>
+        <image class="phoneImg" src="https://www.kzhapp.cn/Imgs/webchat/images/kefuPhone.png"></image>
+    </view>
+    <!-- 查询列表 -->
+    <view class="searchListView" wx:for="{{jifenList}}" wx:key="index" bind:tap="onbankKahao" data-format="{{item.Format}}" data-sendphonenum="{{item.SendPhoneNum}}">
+        <view class="searchTitle"> {{jifenName}}</view>
+        <view class="searchInfo">{{item.Des}}</view>
+        <view class="searchInfo">{{item.Demo}}</view>
+        <image class="emailImg" src="https://www.kzhapp.cn/Imgs/webchat/images/emailto.png"></image>
+    </view>
+    <view class="searchListView" wx:for="{{zhangdanList}}" wx:key="index" bind:tap="onbankKahao" data-format="{{item.Format}}" data-sendphonenum="{{item.SendPhoneNum}}">
+        <view class="searchTitle"> {{zhangdanName}}</view>
+        <view class="searchInfo">{{item.Des}}</view>
+        <view class="searchInfo">{{item.Demo}}</view>
+        <image class="emailImg" src="https://www.kzhapp.cn/Imgs/webchat/images/emailto.png"></image>
+    </view>
+    <view class="searchListView" wx:for="{{eduList}}" wx:key="index" bind:tap="onbankKahao" data-format="{{item.Format}}" data-sendphonenum="{{item.SendPhoneNum}}">
+        <view class="searchTitle"> {{eduName}}</view>
+        <view class="searchInfo">{{item.Des}}</view>
+        <view class="searchInfo">{{item.Demo}}</view>
+        <image class="emailImg" src="https://www.kzhapp.cn/Imgs/webchat/images/emailto.png"></image>
+    </view>
+</view>

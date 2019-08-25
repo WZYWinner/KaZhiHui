@@ -1,0 +1,119 @@
+.personalCenter{
+
+}
+.top{
+    background-color: #E1D6B8;
+    padding: 15px 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.offical_img{
+    width:55px;
+    height:55px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+.content_area{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.content_span1{
+    color: #6A3A0C;
+    font-size: 16px;
+}
+.content_span2{
+    color: #6A3A0C;
+    font-size: 12px;
+}
+.zuobiao{
+    width: 18px;
+    height: 18px;
+}.team{
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.team_img{
+    width: 36px;
+    height: 36px;
+}
+.team_content{
+    font-size: 10px;
+}
+.jiantou1_img{
+    width: 15px;
+    height: 15px;
+}
+.earnings{
+    width: 88%;
+    height: 50px;
+    background: whitesmoke;
+    margin: 25px auto 0 auto;
+    border-radius: 20px;
+}
+.earnings{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.earnings_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.earnings_left .img{
+    width: 28px;
+    height: 28px;
+}
+.earnings_left .content{
+    color: #643C14;
+    font-size: 11px;
+}
+.earnings_center{
+    color: red;
+    font-size: 17px;
+}
+.earnings_right{
+    display: flex;
+    align-items: center;
+}
+.earnings_right .img{
+    width: 20px;
+    height: 20px;
+}
+.earnings_right .content{
+    color: gray;
+    font-size: 12px;
+}
+.main{
+    padding: 20px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E1D6B8;
+    padding: 7px 0;
+}
+.introduce{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduce .img{
+    width: 20px;
+    height: 20px;
+}
+.introduce span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.next .img{
+    width: 15px;
+    height: 15px;
+}

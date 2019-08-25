@@ -1,0 +1,71 @@
+page{
+    background-color: #eee;
+}
+.addDebitCardView{
+    width: calc(100% - 30px);
+    margin: 20px auto;
+}
+.addDebitCardBtn{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #CBB585;
+    /* border-radius: 5px; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.addDebitCardList{
+    width: 100%;
+    height: 170px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+}
+.ListImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.listInfo{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    position: relative;
+    z-index: 100;
+}
+.bankImgView{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.bankImg{
+    width: 100%;
+    height: 100%;
+}
+.bankInfo{
+    width: calc(100% - 45px);
+    color: #fff;
+    margin-top: 16px;
+    margin-left: 10px;
+}
+.bankName{
+    font-size: 15px;
+}
+.bankKahao{
+    font-size: 12px;
+}
+.dialogTextView{
+    width: 80%;
+    margin: 10px auto;
+    font-size: 14px;
+    text-align: center;
+  }

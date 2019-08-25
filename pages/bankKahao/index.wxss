@@ -1,0 +1,18 @@
+page{
+    background-color: #eee;
+}
+.bankKahao{
+    width: calc(100% - 30px);
+    margin: 15px auto;
+}
+.field-index--van-field{
+}
+.saveBut{
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: #CBB585;
+    margin-top: 20px;
+}

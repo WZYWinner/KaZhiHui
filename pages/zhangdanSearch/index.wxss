@@ -1,0 +1,68 @@
+page{
+    background-color: #eee;
+}
+.zhangdanSearch{
+    width: calc(100% - 30px);
+    margin: 15px auto;
+}
+.zhangdanList{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.listLeft{
+    width: 52%;
+    height: 60px;
+    margin-left: 10px;
+    position: relative;
+}
+.bankImg{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 20px;
+}
+.bankInfo{
+    position: absolute;
+    top: 5px;
+    left: 32px;
+    /* background-color: aqua; */
+}
+.bankName{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.kefu{
+    font-size: 12px;
+    margin-top: 2px;
+}
+.kefuPhone{
+    color: #CBB585;
+}
+.listRight{
+    width: 36%;
+    height: 60px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.rightDesc{
+    width: calc(100% - 10px);
+    font-size: 10px;
+    color: #999;
+    height: 22px;
+    line-height: 12px;
+    margin-top: 19px;
+}
+.rigthmoreImg{
+    width: 13px;
+    height: 14px;
+    position: relative;
+    top: 20px;
+}

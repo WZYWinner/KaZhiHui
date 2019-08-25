@@ -1,0 +1,90 @@
+<view class="reservaPlan">
+    <view class="planList">
+        <van-tabs active="{{ planActive }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="未开始">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{noStartList.length != 0}}">
+                        <view class="alllistview" wx:for="{{noStartList}}" wx:key="index" bind:tap="onplanDetail">
+                        <view class="status" style="color:#999;">
+                            未开始
+                        </view>
+                            <view class="danhao">订单号:{{item.PlanNumber}}</view>
+                            <view class="price">￥{{item.Extend2}}</view>
+                            <view class="num">
+                                共{{item.DatePlan}}天
+                                <view class="cishu">{{item.DatePlan}}次</view>
+                            </view>
+                            <view class="benjin">{{item.PlanMoney}}</view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="执行中">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{implementList.length != 0}}">
+                        <view class="alllistview" wx:for="{{implementList}}" wx:key="index" bind:tap="onplanDetail">
+                        <view class="status"style="color:#CCB895;">
+                            执行中
+                        </view>
+                            <view class="danhao">订单号:{{item.PlanNumber}}</view>
+                            <view class="price">￥{{item.Extend2}}</view>
+                            <view class="num">
+                                共{{item.DatePlan}}天
+                                <view class="cishu">{{item.DatePlan}}次</view>
+                            </view>
+                            <view class="benjin">{{item.PlanMoney}}</view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="已完成">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{finishList.length != 0}}">
+                        <view class="alllistview" wx:for="{{finishList}}" wx:key="index" bind:tap="onplanDetail">
+                        <view class="status" style="color:#078B60;">
+                            已完成
+                        </view>
+                            <view class="danhao">订单号:{{item.PlanNumber}}</view>
+                            <view class="price">￥{{item.Extend2}}</view>
+                            <view class="num">
+                                共{{item.DatePlan}}天
+                                <view class="cishu">{{item.DatePlan}}次</view>
+                            </view>
+                            <view class="benjin">{{item.PlanMoney}}</view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="已失败">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{failList.length != 0}}">
+                        <view class="alllistview" wx:for="{{failList}}" wx:key="index" bind:tap="onplanDetail">
+                        <view class="status" style="color:#555;">
+                            已失败
+                        </view>
+                            <view class="danhao">订单号:{{item.PlanNumber}}</view>
+                            <view class="price">￥{{item.Extend2}}</view>
+                            <view class="num">
+                                共{{item.DatePlan}}天
+                                <view class="cishu">{{item.DatePlan}}次</view>
+                            </view>
+                            <view class="benjin">{{item.PlanMoney}}</view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>

@@ -1,0 +1,55 @@
+<view class="addCreditCard">
+    <van-cell-group>
+        <van-field value="{{userInfo.name}}" input-align="right" required clearable label="持卡人" placeholder="请输入持卡人姓名" />
+        <van-field value="{{ userInfo.idCard }}" input-align="right" required clearable label="身份证号" placeholder="请输入持卡人身份证号" />
+        <van-field value="{{ kaPhone }}" input-align="right" required clearable label="银行预留手机号" placeholder="请输入银行预留手机号" bind:change="onPhonechange" />
+        <van-field value="{{ jiejikanum }}" input-align="right" required clearable label="借记卡号" placeholder="请输入借记卡号" bind:change="onjiejichange" />
+
+
+        <view class="jiaoyiXinyong">
+            <view class="xinyongview">
+                <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                    <view class="jiaoyiXinyongTitlePicker">
+                        <text class="biaoji">*</text>
+                        区域
+                    </view>
+                    <view class="jiaoyiXinyongKahaoPicker" wx:if="{{quyuShow}}">
+                        <view class="Kahaoinfo">请选择区域(县/区可不选)</view>
+                        <image class="rightMore" src="https://www.kzhapp.cn/Imgs/webchat/images/rigthmore.png"></image>
+                    </view>
+                    <view class="jiaoyiXinyongKahaoPicker" wx:else>
+                        {{region[0]}}{{region[1]}}{{region[3]}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+
+
+        <van-field value="{{ zhihangName }}" input-align="right" required clearable label="银行卡支行名称" placeholder="请输入银行卡支行名称" bind:change="onzhichange" />
+    </van-cell-group>
+    <!-- 借记卡正面 -->
+    <view class="jiejikaImg">
+        <button class="upLoadBtn" bindtap="choosejiejikazhengimage"></button>
+        <image wx:if="{{jiejikaimagezheng}}" class="q-image" src="{{jiejikaimagezheng}}"></image>
+        <image wx:else class="q-imageNo" src="https://www.kzhapp.cn/Imgs/webchat/images/exchange/xinjianimg.png"></image>
+        <view class="imgText" wx:if="{{jiejikaimagezheng}}" hover-class="none" hover-stop-propagation="false"></view>
+        <view class="imgText" wx:else hover-class="none" hover-stop-propagation="false">借记卡正面</view>
+    </view>
+    <!-- 借记卡反面 -->
+    <view class="jiejikaImg">
+        <button class="upLoadBtn" bindtap="choosejiejikafanimage"></button>
+        <image wx:if="{{jiejikaimagefan}}" class="q-image" src="{{jiejikaimagefan}}"></image>
+        <image wx:else class="q-imageNo" src="https://www.kzhapp.cn/Imgs/webchat/images/exchange/xinjianimg.png"></image>
+        <view class="imgText" wx:if="{{jiejikaimagefan}}" hover-class="none" hover-stop-propagation="false"></view>
+        <view class="imgText" wx:else hover-class="none" hover-stop-propagation="false">借记卡反面</view>
+    </view>
+    <!-- 上传规范 -->
+    <view class="guifan">
+        <view class="guifanTitle">银行卡上传规范</view>
+        <view class="guifandetail">1.请将银行卡横向摆放拍摄</view>
+        <view class="guifandetail">2.请对焦银行卡拍摄，确保图片清晰</view>
+        <view class="guifandetail">3.请确保您的银行卡在有效期之内</view>
+    </view>
+    <!-- 提交按钮 -->
+    <view class="tijiaoBut" bind:tap="toSave">立即提交</view>
+</view>

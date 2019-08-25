@@ -1,0 +1,22 @@
+<view class="addDebitCardView">
+    <van-dialog use-slot title="提示" show-cancel-button show="{{ comfirmShow }}" bind:close="comfirmClose" bind:confirm="onreward" cancelButtonText="取消" confirmButtonText="确定">
+        <view class="dialogTextView">您将要提交借记卡认证，请确认选择的卡片是否正确，确定选择?</view>
+    </van-dialog>
+    <!-- 添加借记卡 -->
+    <view class="addDebitCardBtn" bind:tap="onaddDebitCard">添加借记卡</view>
+    <!-- 信用卡列表 -->
+    <view class="addDebitCardList" wx:for="{{codeList}}" wx:key="index" data-id="{{item.ID}}" bind:tap="onshannghuReceivables">
+        <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/1bg_bank_cmb.png"></image>
+        <!-- 卡信息 -->
+        <view class="listInfo">
+            <view class="bankImgView">
+                <image class="bankImg" src="https://www.kzhapp.cn/Imgs/webchat/images/backIMG.png"></image>
+            </view>
+            <view class="bankInfo">
+                <view class="bankName">{{item.BankName}}</view>
+                <view class="bankKahao">{{item.BankAccountNo}}</view>
+            </view>
+        </view>
+    </view>
+    
+</view>

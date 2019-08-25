@@ -1,0 +1,121 @@
+page {
+    background-color: #eee;
+}
+
+.reservaPlan {
+    width: calc(100% - 50px);
+    margin: 20px auto;
+}
+
+.planList {
+    width: 100%;
+}
+
+.van-tabs__wrap {
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+
+.van-tab__pane {
+    width: 100% !important;
+    height: 515px !important;
+    background-color: #fff !important;
+    padding: 0 15px;
+}
+
+.van-tabs__line {
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+
+.van-tabs__nav--card .van-tab.van-tab--active {
+    color: #fff;
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+/* 列表页 */
+.noStartView{
+    width: 100%;
+}
+.noStartNoList{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+}
+.nolistImg{
+    width: 65px;
+    height: 65px;
+}
+.top, .center{
+    margin-top: 10px;
+    padding: 20px;
+    background:#F0E8D8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+.top_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coin_img{
+    width: 30px;
+    height: 24px;
+}
+.text{
+    color: #A58651;
+    font-size: 13px;
+}
+.top_center{
+    color: rgb(211, 24, 24);
+    font-size: 18px;
+}
+.top_right{
+    font-size: 13px;
+    padding: 5px 12px;
+    background: #C7B180;
+    border-radius: 8px;
+}
+.center_left, .center_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center_text{
+    color: rgb(211, 24, 24);
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+.under{
+    display: flex;
+}
+.info{
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F0E8D8;
+}
+.account_earnings{
+    color: #A58651;
+    font-size: 13px;
+}
+.time{
+    color: gray;
+    font-size: 11px;
+    margin-top: 2px;
+}
+.info .right{
+    display: flex;
+
+}
+.coin_img1{
+    width: 18px;
+    height: 18px;
+}
+.profit{
+    color: rgb(211, 24, 24);
+    font-size: 12px;
+}
+.profit1{
+    font-size: 12px;
+}

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "文案",
+    "navigationBarBackgroundColor": "#CCB895",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+    }
+}

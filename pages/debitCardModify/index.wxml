@@ -1,0 +1,7 @@
+<view class="debitCardModify">
+    <!-- <van-cell-group> -->
+    <van-cell title="持卡人" value="{{userInfo.name}}" />
+    <van-cell title="身份证号" value="{{ userInfo.idCard }}" />
+    <van-cell title="银行预留手机号" value="{{userInfo.phone}}" />
+    <van-cell title="借记卡号" value="{{debitCardModifyList.debitCardId}}" />
+</view>

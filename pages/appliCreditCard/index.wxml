@@ -1,0 +1,21 @@
+<view class="appliCreditCard">
+    <view class="CreditCardList" wx:for="{{creditCardList}}" wx:key="index">
+        <image class="CreditCardListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/1bg_bank_cmb.png"></image>
+        <view class="CreditCardListTop">
+            <view class="bankPhoto">
+                <image class="bankPhotoImg" src="{{item.iconPath}}"></image>
+            </view>
+            <view class="bankInfo">
+                <view class="bankTitle">{{item.name}}</view>
+                <view class="bankDesc">{{item.description}}</view>
+                <view class="immediApply" bind:tap="onimmediApply">立即申请</view>
+            </view>
+        </view>
+        <view class="CreditCardListBottom">
+            <view class="yinlianView">
+                <image class="yinlianImg" src="https://www.kzhapp.cn/Imgs/webchat/images/yinlian.png"></image>
+            </view>
+            <view class="searhJIN" bind:tap="onsearhJIN">查看进度</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "选择借记卡",
+    "navigationBarBackgroundColor": "#CCB895",
+    "usingComponents": {
+        "van-dialog": "/miniprogram_npm/vant-weapp/dialog/index"
+    }
+}

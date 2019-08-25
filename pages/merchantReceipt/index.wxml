@@ -1,0 +1,24 @@
+<view class="merchantReceipt">
+    <view class="topBackView">
+        <image class="topBackImg" src="https://www.kzhapp.cn/Imgs/webchat/images/merchantReceipt/shanghushoukuanBack.png"></image>
+    </view>
+    <!-- 收款通道列表 -->
+    <view class="passagewayView">
+        <view class="passagewayList" wx:for="{{passagewayList}}" wx:key="index" data-productcode="{{item.ProductCode}}" data-feerate="{{item.FeeRate}}" data-userinfo="{{item.UserInfo}}" data-extend="{{item.Extend1}}" bind:tap="onchooseDebitCard">
+            <image class="passageBackImg" src="{{item.BgImg}}"></image>
+            <view class="listTop">
+                <image class="listTopImg" src="https://www.kzhapp.cn/Imgs/webchat/images/yinlian.png"></image>
+                <view class="wayTitle">{{item.ProductName}}</view>
+                <!-- <view class="supportBank" bind:tap="onsupportBank">可支持银行 <image class="leftJian" src="https://www.kzhapp.cn/Imgs/webchat/images/merchantReceipt/leftJian.png"></image></view> -->
+            </view>
+            <view class="listBottom">
+                <view class="detailText">
+                    {{item.ProductDesc}}
+                </view>
+                <view class="reservaPlan" wx:if="{{item.Extend1 == 6}}" bind:tap="onreservaPlan">预约计划 <image class="leftJian" src="https://www.kzhapp.cn/Imgs/webchat/images/merchantReceipt/leftJian.png"></image></view>
+            </view>
+        </view>
+    </view>
+    <!-- 交易记录 -->
+    <view class="TransactionRecord" bind:tap="onTransactionRecord">交易记录</view>
+</view>

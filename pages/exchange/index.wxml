@@ -1,0 +1,9 @@
+<view class="exchange">
+    <!-- 列表 -->
+    <view class="exchangeView">
+        <view class="exchangeList" wx:for="{{exchangeList}}" data-id="{{item.id}}" data-submittype="{{item.submitType}}" wx:key="index" bind:tap="onexchangeDetail">
+            <image class="bankImg" src="{{imgHttp}}{{item.icon}}"></image>
+            <view class="bankName">{{item.name}}</view>
+        </view>
+    </view>
+</view>

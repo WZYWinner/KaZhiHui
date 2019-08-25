@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "征信查询",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "usingComponents": {
+        "van-field": "/miniprogram_npm/vant-weapp/field/index",
+        "van-button": "/miniprogram_npm/vant-weapp/button/index",
+        "van-checkbox": "/miniprogram_npm/vant-weapp/checkbox/index"
+    }
+}

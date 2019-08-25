@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "提交文本",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "usingComponents": {
+        "van-field": "/miniprogram_npm/vant-weapp/field/index"
+    }
+}

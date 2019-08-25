@@ -1,0 +1,16 @@
+<view class="setPassword">
+    <van-field value="{{userPhone}}" placeholder="请输入手机号码" left-icon="phone-circle-o" bind:change="onuserPhoneChange"/>
+    <van-field value="{{NewPwd}}" type="password" placeholder="请输入新密码" left-icon="goods-collect-o" bind:change="onNewPwdChange" />
+    <!-- 验证码登录 -->
+        <view class="Codeview">
+            <van-field value="{{ smsCode }}" left-icon="envelop-o" placeholder="请输入验证码" use-button-slot bind:change="onPhoneCodeChange">
+                <van-button slot="button" size="small" type="primary" wx:if="{{disable}}" bind:tap="onGetCode">
+                    获取验证码
+                </van-button>
+                <van-button slot="button" size="small" type="primary" disabled wx:else>
+                    {{daoshuTime}}
+                </van-button>
+            </van-field>
+        </view>
+        <button class="pwdSave" bind:tap="onpwdSave">确定</button>
+</view>

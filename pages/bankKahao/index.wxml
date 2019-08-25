@@ -1,0 +1,4 @@
+<view class="bankKahao">
+    <van-field value="{{ bankKahao }}" required clearable label="卡号" placeholder="请输入银行卡卡号后四位" input-align="right" bind:change="onbankKahaoChange" />
+    <button class="saveBut" bind:tap="onSave">提交</button>
+</view>

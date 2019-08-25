@@ -1,0 +1,59 @@
+page {
+    background-color: #eee;
+}
+
+.bankServerDdting {
+    width: calc(100% - 30px);
+    margin: 15px auto;
+}
+
+.bankPhone {
+    width: calc(100% - 20px);
+    padding: 10px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #fff;
+    position: relative;
+    color: #333;
+}
+
+.kefu {
+    color: #CBB585;
+}
+
+.phoneImg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+
+/* 查询列表 */
+.searchListView {
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    height: 53px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: relative;
+    margin-top: 10px;
+}
+
+.searchTitle {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.searchInfo{
+    font-size: 11px;
+    color: #333;
+}
+.emailImg{
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 18px; 
+}

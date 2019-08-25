@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "设置密码",
+    "usingComponents": {
+        "van-field": "/miniprogram_npm/vant-weapp/field/index",
+        "van-button": "/miniprogram_npm/vant-weapp/button/index"
+    }
+}

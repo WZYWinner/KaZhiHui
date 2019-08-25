@@ -1,0 +1,97 @@
+Page{
+    background: #F2F2F2;
+}
+.shareContent {
+    width: 100%;
+}
+.shareImg{
+    width: 100%;
+}
+.withdrawalAccount{
+    padding: 25px 20px;
+    /* position: relative; */
+}
+.cardImage{
+    width: 100%;
+    height: 140px;
+    
+}
+.relative{
+    position: relative;
+}
+.info{
+    position: absolute;
+    left: 35px;
+    top: 55px;
+    color: white;
+    font-size: 11px;
+}
+.right{
+    margin-left: 50px;
+}
+.usreInfo{
+    color: white;
+    font-size: 11px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.txInfo{
+    padding: 10px 20px;
+    margin-top: 10px;
+    width: 85%;
+    height: 90px;
+    background: white;
+    box-shadow: 2px 2px 2px #CCB895;
+}
+.txInfo_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jinbi{
+    width: 25px;
+    height: 20px;
+}
+.txInfo_top_left{
+    font-size: 10px;
+    color: rgb(145, 112, 56);
+}
+.txInfo_top_right{
+    font-size: 11px;
+    color: rgb(145, 112, 56);
+}
+.input{
+    font-size: 11px;
+    border-bottom: 1px solid gray;
+    width: 100px;
+    text-align: center;
+}
+.txInfo_bottom{
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.flex span{
+    color: #CCB895;
+}
+.txButton{
+    background: rgb(236, 221, 194);
+    width: 80px;
+    text-align: center;
+    padding: 8px 20px;
+    margin: 30px auto;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.addCount{
+    color: #CCB895;
+    font-size: 13px;
+}
+.right span{
+    color: white;
+    border: 1px solid white;
+    padding: 2px 10px;
+    border-radius: 10px;
+}

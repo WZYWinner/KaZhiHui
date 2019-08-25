@@ -1,0 +1,8 @@
+<view class="realName" hover-class="none" hover-stop-propagation="false">
+<view class="text">上传您的身份证正反面照片</view>
+<view class="pics">
+    <image class="img" bind:tap="commitZheng" src="{{cardZheng}}"></image>
+    <image class="img" bind:tap="commitFan" src="{{cardFan}}"></image>
+</view>
+<button class="commit">确认</button>
+</view>

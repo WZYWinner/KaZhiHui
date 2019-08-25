@@ -1,0 +1,15 @@
+<view class="zhangdanSearch">
+    <view class="zhangdanList" wx:for="{{zhangdanList}}" wx:key="index" bind:tap="onbankServerDdting" data-item="{{item.Items}}" data-name="{{item.Name}}" data-phone="{{item.ServicePhone}}">
+        <view class="listLeft">
+            <image class="bankImg" src="{{item.Icon}}"></image>
+            <view class="bankInfo">
+                <view class="bankName">{{item.Name}}</view>
+                <view class="kefu">客服热线 <text class="kefuPhone">{{item.ServicePhone}}</text></view>
+            </view>
+        </view>
+        <view class="listRight">
+            <view class="rightDesc">{{item.Title}}</view>
+            <image class="rigthmoreImg" src="../images/rigthmore.png"></image>
+        </view>
+    </view>
+</view>

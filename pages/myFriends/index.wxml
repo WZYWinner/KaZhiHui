@@ -1,0 +1,38 @@
+<view class="reservaPlan">
+    <view class="planList">
+        <van-tabs active="{{ planActive }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="普通">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{noStartList}}">
+                        <view class="">dsf</view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="VIP">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{implementList}}">
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="经理人">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{finishList}}">
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>

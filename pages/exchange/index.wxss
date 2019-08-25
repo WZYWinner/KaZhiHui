@@ -1,0 +1,42 @@
+page{
+    background-color: #eee;
+}
+.exchange{
+    width: calc(100% - 60px);
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.exchangeView{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.exchangeList{
+    width: 25%;
+    height: 80px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    text-align: center;
+}
+.exchangeList:nth-of-type(odd){
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+}
+.exchangeList:nth-of-type(even){
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+}
+.bankImg{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+.bankName{
+    font-size: 14px;
+    width: calc(100% - 10px);
+    padding: 0 5px;
+
+}

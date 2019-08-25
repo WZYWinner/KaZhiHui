@@ -1,0 +1,83 @@
+<view class="chooseLoan">
+    <view class="loanList" bind:tap="onloanApply">
+        <view class="listLeft">
+            <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+        </view>
+        <view class="listRight">
+            <view class="loanName">花呗</view>
+            <view class="loanDesc">首次借款成功，数据次月返</view>
+        </view>
+    </view>
+    <view class="loanList" bind:tap="onloanApply">
+        <view class="listLeft">
+            <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+        </view>
+        <view class="listRight">
+            <view class="loanName">花呗</view>
+            <view class="loanDesc">首次借款成功，数据次月返</view>
+        </view>
+    </view>
+    <view class="loanList">
+        <view class="listLeft">
+            <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+        </view>
+        <view class="listRight">
+            <view class="loanName">花呗</view>
+            <view class="loanDesc">首次借款成功，数据次月返</view>
+        </view>
+    </view>
+    <view class="loanList">
+        <view class="listLeft">
+            <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+        </view>
+        <view class="listRight">
+            <view class="loanName">花呗</view>
+            <view class="loanDesc">首次借款成功，数据次月返</view>
+        </view>
+    </view>
+    <view class="loanList">
+        <view class="listLeft">
+            <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+        </view>
+        <view class="listRight">
+            <view class="loanName">花呗</view>
+            <view class="loanDesc">首次借款成功，数据次月返</view>
+        </view>
+    </view>
+    <view class="loanList">
+        <view class="listLeft">
+            <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+        </view>
+        <view class="listRight">
+            <view class="loanName">花呗</view>
+            <view class="loanDesc">首次借款成功，数据次月返</view>
+        </view>
+    </view>
+    <view class="loanList">
+        <view class="listLeft">
+            <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+        </view>
+        <view class="listRight">
+            <view class="loanName">花呗</view>
+            <view class="loanDesc">首次借款成功，数据次月返</view>
+        </view>
+    </view>
+    <view class="loanList">
+        <view class="listLeft">
+            <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+        </view>
+        <view class="listRight">
+            <view class="loanName">花呗</view>
+            <view class="loanDesc">首次借款成功，数据次月返</view>
+        </view>
+    </view>
+    <view class="loanList">
+        <view class="listLeft">
+            <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+        </view>
+        <view class="listRight">
+            <view class="loanName">花呗</view>
+            <view class="loanDesc">首次借款成功，数据次月返</view>
+        </view>
+    </view>
+</view>

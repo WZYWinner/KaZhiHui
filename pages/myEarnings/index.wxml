@@ -1,0 +1,299 @@
+<view class="myEarnings">
+    <view class="planList">
+        <van-tabs active="{{ planActive }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="应用收益">
+                <view class="top">
+                    <view class="top_left">
+                    <view><image class="coin_img" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi.png"></image></view>
+                    <view class="text">
+                        可提现收益
+                    </view>
+                </view>
+                <view class="top_center">
+                    {{money}}
+                </view>
+                <view class="top_right" bind:tap="myApplyEarningWithdrawal">
+                    提现
+                </view>
+                </view>
+                <view class="center">
+                    <view class="center_left">
+                        <view class="center_text">
+                            {{hisMoney}}
+                        </view>
+                        <view class="under">
+                            <view><image class="coin_img" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi.png"></image></view>
+                            <view class="text">
+                                累计收益
+                            </view>
+                        </view>
+                    </view>
+                    <view class="center_right">
+                        <view class="center_text">
+                            {{payment}}
+                        </view>
+                        <view class="under">
+                            <view><image class="coin_img" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi.png"></image></view>
+                            <view class="text">
+                                累计支出
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="bottom">
+                    <van-tabs active="{{ application_active }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="全部">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{application_total_list}}">
+                        <view wx:for="{{application_total_list}}" wx:key="index">
+                        <view class="info" wx:if="{{item.type===1}}">
+                            <view class="left">
+                                <view class="account_earnings">{{item.memo}}</view>
+                                <view class="time">{{item.time}}</view>
+                            </view>
+                            <view class="right">
+                                <view><image class="coin_img1" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi1.png"></image></view>
+                                <view class="profit">+{{item.money}}</view>
+                            </view>
+                            </view>
+
+                            <view class="info" wx:if="{{item.type===2}}">
+                            <view class="left">
+                                <view class="account_earnings">{{item.memo}}</view>
+                                <view class="time">{{item.time}}</view>
+                            </view>
+                            <view class="right">
+                                <view><image class="coin_img1" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi1.png"></image></view>
+                                <view class="profit1">-{{item.money}}</view>
+                            </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+
+            <van-tab title="收入">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{application_income_list}}">
+                        <view class="info" wx:for="{{application_total_list}}" wx:key="index">
+                            <view class="left">
+                                <view class="account_earnings">{{item.memo}}</view>
+                                <view class="time">{{item.time}}</view>
+                            </view>
+                            <view class="right">
+                                <view><image class="coin_img1" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi1.png"></image></view>
+                                <view class="profit">+{{item.money}}</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+
+            <van-tab title="支出">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{application_spending_list}}">
+                        <view class="info" wx:for="{{application_spending_list}}" wx:key="index">
+                            <view class="left">
+                                <view class="account_earnings">{{item.memo}}</view>
+                                <view class="time">{{item.time}}</view>
+                            </view>
+                            <view class="right">
+                                <view><image class="coin_img1" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi1.png"></image></view>
+                                <view class="profit1">-{{item.money}}</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+                </view>
+            </van-tab>
+
+
+            <van-tab title="推广收益">
+                <view class="top">
+                    <view class="top_left">
+                    <view><image class="coin_img" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi.png"></image></view>
+                    <view class="text">
+                        可提现收益
+                    </view>
+                </view>
+                <view class="top_center">
+                    {{promote_withdraw_arnings}}
+                </view>
+                <view class="top_right">
+                    提现
+                </view>
+                </view>
+                <view class="center">
+                    <view class="center_left">
+                        <view class="center_text">
+                            {{promote_accumulated_earnings}}
+                        </view>
+                        <view class="under">
+                            <view><image class="coin_img" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi.png"></image></view>
+                            <view class="text">
+                                累计收益
+                            </view>
+                        </view>
+                    </view>
+                    <view class="center_right">
+                        <view class="center_text">
+                            {{promote_total_spending}}
+                        </view>
+                        <view class="under">
+                            <view><image class="coin_img" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi.png"></image></view>
+                            <view class="text">
+                                累计支出
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="bottom">
+                    <van-tabs active="{{ application_active }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="全部">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{promote_total_list}}">
+                        <view wx:for="{{promote_total_list}}" wx:key="index">
+                        <view class="info" wx:if="{{item.type===1}}">
+                            <view class="left">
+                                <view class="account_earnings">{{item.memo}}</view>
+                                <view class="time">{{item.time}}</view>
+                            </view>
+                            <view class="right">
+                                <view><image class="coin_img1" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi1.png"></image></view>
+                                <view class="profit">+{{item.money}}</view>
+                            </view>
+                        </view>
+                            
+                            <view class="info" wx:if="{{item.type===2}}">
+                            <view class="left">
+                                <view class="account_earnings">{{item.memo}}</view>
+                                <view class="time">{{item.time}}</view>
+                            </view>
+                            <view class="right">
+                                <view><image class="coin_img1" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi1.png"></image></view>
+                                <view class="profit1">-{{item.money}}</view>
+                            </view>
+                        </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="收入">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{promote_income_list}}">
+                        <view class="info" wx:for="{{promote_income_list}}" wx:key="index">
+                            <view class="left">
+                                <view class="account_earnings">{{item.memo}}</view>
+                                <view class="time">{{item.time}}</view>
+                            </view>
+                            <view class="right">
+                                <view><image class="coin_img1" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi1.png"></image></view>
+                                <view class="profit">+{{item.money}}</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="支出">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{promote_spending_list}}">
+                        <view class="info" wx:for="{{promote_spending_list}}" wx:key="index">
+                            <view class="left">
+                                <view class="account_earnings">{{item.memo}}</view>
+                                <view class="time">{{item.time}}</view>
+                            </view>
+                            <view class="right">
+                                <view><image class="coin_img1" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi1.png"></image></view>
+                                <view class="profit1">-{{item.money}}</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+                </view>
+            </van-tab>
+
+
+            <van-tab title="每日收益">
+                <view class="top">
+                    <view class="top_left">
+                    <view><image class="coin_img" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi.png"></image></view>
+                    <view class="text">
+                        可提现收益
+                    </view>
+                </view>
+                <view class="top_center">
+                    {{totalMoney}}
+                </view>
+                </view>
+                <view class="center">
+                    <view class="center_left">
+                        <view class="center_text">
+                            {{inComeMoney}}
+                        </view>
+                        <view class="under">
+                            <view><image class="coin_img" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi.png"></image></view>
+                            <view class="text">
+                                累计收益
+                            </view>
+                        </view>
+                    </view>
+                    <view class="center_right">
+                        <view class="center_text">
+                            {{payMoney}}
+                        </view>
+                        <view class="under">
+                            <view><image class="coin_img" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi.png"></image></view>
+                            <view class="text">
+                                本月收益
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="bottom">
+                    <van-tabs active="{{ application_active }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="全部">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{daily_total_list}}">
+                        <view class="info" wx:for="{{daily_total_list}}" wx:key="index">
+                            <view class="left">
+                                <view class="account_earnings">{{item.time}}</view>
+                            </view>
+                            <view class="right">
+                                <view><image class="coin_img1" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jinbi1.png"></image></view>
+                                <view class="profit">+{{item.money}}</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+                </view>
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>

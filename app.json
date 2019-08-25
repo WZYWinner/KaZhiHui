@@ -1,0 +1,90 @@
+{
+  "pages": [
+    "pages/wenancopywriting/index",
+    "pages/withdrawalAccount/index",
+    "pages/myEarningWithdrawal/index",
+    "pages/withdrawalAccountAdd/index",
+    "pages/myEarnings/index",
+    "pages/withdrawalRecord/index",
+    "pages/appliCreditCard/index",
+    "pages/personalCenter/index",
+    "pages/openVip/index",
+    "pages/myDeclaration/index",
+    "pages/changePassword/index",
+    "pages/index/index",
+    "pages/Setting/index",
+    "pages/myCard/index",
+    "pages/realName/index",
+    "pages/myFriends/index",
+    "pages/share/index",
+    "pages/login/index",
+    "pages/setPassword/index",
+    "pages/merchantReceipt/index",
+    "pages/supportBank/index",
+    "pages/reservaPlan/index",
+    "pages/transactionRecord/index",
+    "pages/addDebitCard/index",
+    "pages/addCreditCard/index",
+    "pages/exchange/index",
+    "pages/exchangeDetail/index",
+    "pages/fillDeclartion/index",
+    "pages/chooseDebitCard/index",
+    "pages/chooseCreditCard/index",
+    "pages/immediApply/index",
+    "pages/chooseLoan/index",
+    "pages/loanApply/index",
+    "pages/kaDoctor/index",
+    "pages/cepingRecord/index",
+    "pages/zhengxinSearch/index",
+    "pages/zhengxinRecode/index",
+    "pages/zhangdanSearch/index",
+    "pages/bankServerDdting/index",
+    "pages/bankKahao/index",
+    "pages/submitText/index",
+    "pages/shannghuReceivables/index",
+    "pages/tongdaoC/index",
+    "pages/customPlan/index",
+    "pages/myPlan/index",
+    "pages/planDetail/index"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#CCB895",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#A5A5A5",
+    "selectedColor": "#FD713C",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "pages/images/home_n.png",
+      "selectedIconPath": "pages/images/home_p.png"
+    },
+    {
+      "pagePath": "pages/wenancopywriting/index",
+      "text": "文案",
+      "iconPath": "pages/images/order_n.png",
+      "selectedIconPath": "pages/images/order_p.png"
+    }, {
+      "pagePath": "pages/share/index",
+      "text": "分享",
+      "iconPath": "pages/images/share_n.png",
+      "selectedIconPath": "pages/images/share_p.png"
+    }, {
+      "pagePath": "pages/openVip/index",
+      "text": "开通会员",
+      "iconPath": "pages/images/kaitong_n.png",
+      "selectedIconPath": "pages/images/kaitong_p.png"
+    }, {
+      "pagePath": "pages/personalCenter/index",
+      "text": "个人中心",
+      "iconPath": "pages/images/mine_n.png",
+      "selectedIconPath": "pages/images/mine_p.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,36 @@
+<view class="kaDoctor">
+    <view class="basicInfo">
+        <view class="infoTitle">基本信息
+            <view class="record" bind:tap="oncepingRecord">记录</view>
+        </view>
+        <van-field value="{{ Name }}" placeholder="姓名" bind:change="onNameChange" />
+        <van-field value="{{ identityNum }}" placeholder="身份证号" bind:change="onidentityNumChange" />
+        <van-field value="{{ creditCard }}" placeholder="信用卡卡号" bind:change="oncreditCardChange" />
+        <van-field value="{{ Phone }}" placeholder="银行预留手机号码" bind:change="onPhoneChange" />
+        <van-field value="{{ sms }}" placeholder="验证码" border="{{ false }}" use-button-slot>
+            <van-button slot="button" size="small" type="primary">发送验证码</van-button>
+        </van-field>
+        <!-- 授权 -->
+        <view class="shouquanshu">
+            <van-checkbox value="{{ checked }}" bind:change="oncheckedChange" checked-color="#07c160">
+                我已阅读并同意
+                <text class="shouquanText">《用户授权协议》</text>
+            </van-checkbox>
+            <view class="searchPri">
+                查询费用
+                <text class="shouquanText">19.8元</text>
+            </view>
+        </view>
+        <!-- 查询 -->
+        <view class="searchView">
+            <button class="searchBut">查询</button>
+        </view>
+        <!-- 查询需知 -->
+        <view class="searchKnow">
+            <view class="knowTitle">查询需知</view>
+            <view class="knowInfo">1.两个月内新卡请勿查询，否则查无结果</view>
+            <view class="knowInfo">2.近半年内未交易的卡请勿查询，否则查无结果</view>
+            <view class="knowInfo">3.请确保输入信息属实，否则查无结果</view>
+        </view>
+    </view>
+</view>

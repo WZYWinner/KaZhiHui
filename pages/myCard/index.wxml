@@ -1,0 +1,98 @@
+<view class="reservaPlan">
+    <view class="planList">
+        <van-tabs active="{{ planActive }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="信用卡">
+                <view class="creditCard">
+                    <view class="noStartList" wx:if="{{creditCardList}}">
+                        <view class="cardInfo" wx:for="{{creditCardList}}" wx:key="index">
+                            <view>
+                                <image class="img" src="https://www.kzhapp.cn/Imgs/webchat/images/1bg_bank_cmb.png"></image>
+                                <view class="content">
+                                    <view class="header">
+                                        <view class="left">
+                                            <view>
+                                                <image class="logo" src="https://www.kzhapp.cn/Imgs/webchat/images/nonghang.png"></image>
+                                            </view>
+                                            <view class="text">
+                                                <span>{{item.BankName}}</span>
+                                                <p>{{item.BankAccountNo}}</p>
+                                            </view>
+                                        </view>
+                                        <view class="right" data-id="{{item.ID}}" data-bankaccountno="{{item.BankAccountNo}}" data-expireddate="{{item.ExpiredDate}}" data-statementdate="{{item.StatementDate}}" data-repaymentDate="{{item.RepaymentDate}}" bind:tap="creditCardModify">
+                                            修改
+                                        </view>
+                                    </view>
+                                    <view class="bottom">
+                                        <view>
+                                            <image class="yinlian" src="https://www.kzhapp.cn/Imgs/webchat/images/yinlian1.png"></image>
+                                        </view>
+                                        <view class="date">
+                                            <view class="date_top">
+                                                距离还款日
+                                                <span>{{item.monthDay[index].month}}月{{item.RepaymentDate}}日</span>
+                                                , 还有
+                                                <span>{{item.monthDay[index].day}}天</span>
+                                            </view>
+                                            <view class="date_bottom">
+                                                <view class="date_top">
+                                                    账单日：{{item.StatementDate}}日
+                                                </view>
+                                                <view class="huankuan">
+                                                    还款日：{{item.RepaymentDate}}日
+                                                </view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="借记卡">
+                <view class="debitCard">
+                    <view class="noStartList" wx:if="{{debitCardList}}">
+                        <view class="cardInfo" wx:for="{{debitCardList}}" wx:key="index">
+                            <view>
+                                <image class="img" src="https://www.kzhapp.cn/Imgs/webchat/images/1bg_bank_cmb.png"></image>
+                                <view class="content">
+                                    <view class="header">
+                                        <view class="left">
+                                            <view>
+                                                <image class="logo" src="https://www.kzhapp.cn/Imgs/webchat/images/nonghang.png"></image>
+                                            </view>
+                                            <view class="text">
+                                                <span>{{item.BankName}}</span>
+                                                <p>{{item.BankAccountNo}}</p>
+                                            </view>
+                                        </view>
+                                        <view class="right" data-bankaccountno="{{item.BankAccountNo}}" bind:tap="debitCardModify">
+                                            修改
+                                        </view>
+                                    </view>
+                                    <view class="bottom">
+                                        <view>
+                                            <image class="yinlian" src="https://www.kzhapp.cn/Imgs/webchat/images/yinlian1.png"></image>
+                                        </view>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+    </view>
+    <view class="addNewCard" bind:tap="onTo">添加</view>
+    <van-popup position="bottom" show="{{ show }}" bind:close="onClose">
+        <view class="choose" bind:tap="creditCardAdd">信用卡</view>
+        <view class="choose" bind:tap="debitCardAdd">借记卡</view>
+        <view class="choose" bind:close="onClose">取消</view>
+    </van-popup>
+</view>

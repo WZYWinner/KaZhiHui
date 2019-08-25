@@ -1,0 +1,82 @@
+page {
+    background-color: #eee;
+}
+
+.NocopywritingList{
+    width: 100%;
+    height: 100px;
+    margin-top: 110px;
+    text-align: center;
+}
+.Noimg{
+    width: 55px;
+    height: 55px;
+}
+
+.wenancopywriting {
+    width: calc(100% - 30px);
+    margin: 10px auto;
+}
+
+.copywritingList {
+    width: 100%;
+}
+
+.shop_left {
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+
+.copywritImgView {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.copywritImg {
+    width: 100%;
+    height: 100%;
+}
+
+.copyView {
+    width: 100%;
+    position: relative;
+    height: 40px;
+}
+
+.lab_copy {
+    display: block;
+    width: 90px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    background-color: #CBB585;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+.copyTextBtn {
+    left: 0;
+}
+
+.saveImgBtn {
+    right: 0;
+}
+.submitText{
+    width: 20px;
+    height: 75px;
+    text-align: center;
+    background-color: rgba(1, 1, 1, .7);
+    font-size: 14px;
+    position: fixed;
+    bottom: 290px;
+    right: 5px;
+    padding: 15px 3px;
+    color: #eee;
+}

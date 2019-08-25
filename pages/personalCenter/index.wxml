@@ -1,0 +1,46 @@
+<view class="personalCenter" hover-class="none" hover-stop-propagation="false">
+    <view class="top">
+<view class="header">
+<view bind:tap="myInfo">
+    <image class="offical_img" src="{{httpImg}}/{{userInfo.headImg}}"></image>
+</view>
+    <view class="content">
+        <span class="content_span1">{{userInfo.name}}</span>
+        <view class="content_area">
+            <image class="zuobiao" src="../images/personalCenter/zuobiao.png"></image>
+            <span class="content_span2">无运营状态</span>
+        </view>
+    </view>
+    <view class="team">
+        <image class="team_img" src="../images/personalCenter/huizhang.png"></image>
+        <view class="team_content">团队分</view>
+    </view>
+    <view class="jiantou">
+        <image class="jiantou1_img" src="../images/personalCenter/jiantou1.png"></image>
+    </view>
+</view>
+        <view class="earnings" bind:tap="myEarnings">
+            <view class="earnings_left">
+                <image class="img" src="../images/personalCenter/jinbi.png"></image>
+                <span class="content">我的收益</span>
+            </view>
+            <view class="earnings_center">0.00</view>
+            <view class="earnings_right">
+                <span class="content">更多</span>
+                <image class="img" src="../images/personalCenter/jiantou2.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="main">
+    <!-- wx:for-index="index" wx:for-item="item" -->
+        <view class="list" wx:for="{{list}}" wx:key="index" bind:tap="goto" data-index="{{index}}">
+            <view class="introduce">
+                <image class="img" src="{{item.img}}"></image>
+                <span>{{item.span}}</span>
+            </view>
+            <view class="next">
+                <image class="img" src="../images/personalCenter/jiantou2.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

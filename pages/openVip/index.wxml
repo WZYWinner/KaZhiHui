@@ -1,0 +1,203 @@
+<view class="reservaPlan">
+    <view class="planList">
+        <van-tabs active="{{ planActive }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="普通">
+                <view class="noStartView">
+                    <view class="header">
+                        <view class="vip">升级VIP</view>
+                        <view><image class="huizhang" src="../images/personalCenter/huizhang.png"></image></view>
+                        <view class="jlr">升级经理人</view>
+                    </view>
+                    <view class="content">
+                        <view class="title">
+                            积分兑换：
+                        </view>
+                        <view class="text">
+                            普通用户兑换一万积分收益（约8元）（不同银行有所不同具体点击查看具体收益）
+                        </view>
+                    </view>
+                    <view class="content">
+                        <view class="title">
+                            信用卡申请：
+                        </view>
+                        <view class="text">
+                            普通用户申请收款收益（0元）
+                        </view>
+                    </view>
+                    <view class="content">
+                        <view class="title">
+                            商户收款：
+                        </view>
+                        <view class="text">
+                            普通用户非落地通道费率（0.63%+1），落地通道费率（0.68%+1）
+                        </view>
+                    </view>
+
+                    <view class="content">
+                        <view class="title">
+                            我要还款：
+                        </view>
+                        <view class="text">
+                            普通用户还款费率（0.79%+1）
+                        </view>
+                    </view>
+
+                    <view class="content">
+                        <view class="title">
+                            卡医生：
+                        </view>
+                        <view class="text">
+                            普通用户单次查询费用（19.8元）
+                        </view>
+                    </view>
+
+                    <view class="content">
+                        <view class="title">
+                            征信查询：
+                        </view>
+                        <view class="text">
+                            普通用户单次查询费用（39.8）
+                        </view>
+                    </view>
+
+                    <view class="content1">
+                        VIP、经理人收益高、费率低、单次查询费用低，获得与普通用户间差价收益
+                    </view>
+                    <view class="shouyiBtn">
+                        查看具体收益
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="VIP">
+               <view class="noStartView">
+                    <view class="header">
+                        <view class="vip">升级VIP</view>
+                        <view><image class="huizhang" src="../images/personalCenter/huizhang.png"></image></view>
+                        <view class="jlr">升级经理人</view>
+                    </view>
+                    <view class="content">
+                        <view class="title">
+                            积分兑换：
+                        </view>
+                        <view class="text">
+                            VIP兑换一万积分收益（约9元）（不同银行有所不同具体点击查看具体收益）
+                        </view>
+                    </view>
+                    <view class="content">
+                        <view class="title">
+                            信用卡申请：
+                        </view>
+                        <view class="text">
+                            VIP申请收款收益（约60元） （不同银行有所不同具体点击查看具体收益）
+                        </view>
+                    </view>
+                    <view class="content">
+                        <view class="title">
+                            商户收款：
+                        </view>
+                        <view class="text">
+                            VIP非落地通道费率（0.59%+1），落地通道费率（0.64%+1）
+                        </view>
+                    </view>
+
+                    <view class="content">
+                        <view class="title">
+                            我要还款：
+                        </view>
+                        <view class="text">
+                            普通用户还款费率（0.74%+1）
+                        </view>
+                    </view>
+
+                    <view class="content">
+                        <view class="title">
+                            卡医生：
+                        </view>
+                        <view class="text">
+                            VIP单次查询费用（9.8元）
+                        </view>
+                    </view>
+
+                    <view class="content">
+                        <view class="title">
+                            征信查询：
+                        </view>
+                        <view class="text">
+                            VIP单次查询费用（25.8）
+                        </view>
+                    </view>
+
+                    
+                    <view class="shouyiBtn">
+                        查看具体收益
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="经理人">
+                 <view class="noStartView">
+                    <view class="header">
+                        <view class="vip">升级VIP</view>
+                        <view><image class="huizhang" src="../images/personalCenter/huizhang.png"></image></view>
+                        <view class="jlr">升级经理人</view>
+                    </view>
+                    <view class="content">
+                        <view class="title">
+                            积分兑换：
+                        </view>
+                        <view class="text">
+                            经理人兑换一万积分收益（约10元）（不同银行有所不同具体点击查看具体收益）
+                        </view>
+                    </view>
+                    <view class="content">
+                        <view class="title">
+                            信用卡申请：
+                        </view>
+                        <view class="text">
+                            经理人申请收款收益（约80元） （不同银行有所不同具体点击查看具体收益）
+                        </view>
+                    </view>
+                    <view class="content">
+                        <view class="title">
+                            商户收款：
+                        </view>
+                        <view class="text">
+                            经理人非落地通道费率（0.55%+1），落地通道费率（0.60%+1）
+                        </view>
+                    </view>
+
+                    <view class="content">
+                        <view class="title">
+                            我要还款：
+                        </view>
+                        <view class="text">
+                            经理人还款费率（0.60%+1）
+                        </view>
+                    </view>
+
+                    <view class="content">
+                        <view class="title">
+                            卡医生：
+                        </view>
+                        <view class="text">
+                            经理人单次查询费用（8.3元）
+                        </view>
+                    </view>
+
+                    <view class="content">
+                        <view class="title">
+                            征信查询：
+                        </view>
+                        <view class="text">
+                            经理人单次查询费用（22.8）
+                        </view>
+                    </view>
+
+                    
+                    <view class="shouyiBtn">
+                        查看具体收益
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>

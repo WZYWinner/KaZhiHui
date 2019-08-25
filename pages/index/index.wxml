@@ -1,0 +1,63 @@
+<!-- index.wxml -->
+<view class="homeIndex">
+    <van-dialog use-slot title="经理人超级奖励活动开启" show-cancel-button show="{{ jiangliShow }}" bind:close="jiangliClose" bind:confirm="onreward" cancelButtonText="放弃查看" confirmButtonText="立即前往">
+        <view class="dialogTextView">各卡智汇尊贵的用户心好，为促进经理人市场推广，促进经理人辅导用户使用App力度。</view>
+        <view class="dialogTextView">先开启金丽人超级奖励活动。最高可获得1200+的活动奖励!5800+推广奖励!立即前往活动中心查看吧!</view>
+    </van-dialog>
+    <swiper indicator-dots="{{indicatorDots1}}" autoplay="{{autoplay1}}" interval="{{interval1}}" duration="{{duration1}}" class="swiperView">
+        <block wx:for="{{imgUrls1}}" wx:key="index">
+            <swiper-item>
+                <image src="{{imgHttp}}{{item.image}}" class="slide-image" mode="widthFix" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <!-- 通告栏 -->
+    <view class="naticeView">
+        <image class="tonggao" src="https://www.kzhapp.cn/Imgs/webchat/images/tonggao.png"></image>
+        <van-notice-bar text="通知：信用卡服务您的生活，卡智汇创造您的财富，招商热线：400-030-2688" color="rgb(249, 217, 158)"/>
+    </view>
+    <!-- 功能列表 -->
+    <view class="funcView" >
+        <view class="funcList" bind:tap="onmerchantReceipt">
+            <image class="funcImg" src="https://www.kzhapp.cn/Imgs/webchat/images/shoukuan.png"></image>
+            <view class="funcTitle">商户收款</view>
+        </view>
+        <view class="funcList" bind:tap="onchooseDebitCard">
+            <image class="funcImg" src="https://www.kzhapp.cn/Imgs/webchat/images/zhinenghuan.png"></image>
+            <view class="funcTitle">智能还款</view>
+        </view>
+        <view class="funcList" bind:tap="onexchange">
+            <image class="funcImg" src="https://www.kzhapp.cn/Imgs/webchat/images/jifenduihuan.png"></image>
+            <view class="funcTitle">积分兑换</view>
+        </view>
+        <view class="funcList" bind:tap="onappliCreditCard">
+            <image class="funcImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_credit_apply.png"></image>
+            <view class="funcTitle">信用卡申请</view>
+        </view>
+        <view class="funcList" bind:tap="onchooseLoan">
+            <image class="funcImg" src="https://www.kzhapp.cn/Imgs/webchat/images/ic_home_menu_loan.png"></image>
+            <view class="funcTitle">贷款</view>
+        </view>
+        <view class="funcList" bind:tap="onkaDoctor">
+            <image class="funcImg" src="https://www.kzhapp.cn/Imgs/webchat/images/kaDr.png"></image>
+            <view class="funcTitle">卡医生</view>
+        </view>
+        <view class="funcList" bind:tap="onzhengxinSearch">
+            <image class="funcImg" src="https://www.kzhapp.cn/Imgs/webchat/images/zhengxin.png"></image>
+            <view class="funcTitle">征信查询</view>
+        </view>
+        <view class="funcList" bind:tap="onzhangdanSearch">
+            <image class="funcImg" src="https://www.kzhapp.cn/Imgs/webchat/images/zhangdan.png"></image>
+            <view class="funcTitle">账单查询</view>
+        </view>
+    </view>
+    <!-- 底部轮播 -->
+    <swiper indicator-dots="{{indicatorDots2}}" autoplay="{{autoplay2}}" interval="{{interval2}}" duration="{{duration2}}" class="swiperView">
+        <block wx:for="{{imgUrls2}}" wx:key="index">
+            <swiper-item>
+                <image src="{{item.url}}" class="slide-image" mode="widthFix" />
+            </swiper-item>
+        </block>
+    </swiper>
+
+</view>

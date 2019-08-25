@@ -1,0 +1,85 @@
+<view class="customPlan" hover-class="none" hover-stop-propagation="false">
+    <view class="header">
+        <view class="TransactionRecord" bind:tap="onmyPlan">我的计划</view>
+    </view>
+    <view class="carInfo" hover-class="none" hover-stop-propagation="false">
+        <view class="Card">
+            <view class="carInfo_top" bind:tap="onchooseCreditCard">
+                <view>
+                    <image class="img" src="https://www.kzhapp.cn/Imgs/webchat/images/1bg_bank_cmb.png"></image>
+                </view>
+                <view class="choose">
+                    请选择银行卡
+                    <span>></span>
+                </view>
+            </view>
+            <view class="carInfo_bottom">
+                <view class="zdr">
+                    <view class="text">账单日</view>
+                    <view class="date">/</view>
+                </view>
+                <view class="hkr">
+                    <view class="text">还款日</view>
+                    <view class="date">/</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="wrap">
+        <view class="content">
+            <view class="line">
+                <view class="">还款金额</view>
+                <view class="">
+                    <input placeholder="请输入还款金额" auto-focus align="right" />
+                </view>
+            </view>
+            <view class="line">
+                <view>还款次数/日</view>
+                <view class="type">
+                    <view wx:for="{{type}}" class="{{id === index?'active':'sort'}}" wx:key="index" bind:tap="change" data-index="{{index}}">
+                        {{item}}
+                    </view>
+                </view>
+            </view>
+            <view class="line">
+                <view class="">还款日期</view>
+                <view class="">
+                    <input placeholder="请选择还款日期" auto-focus />
+                </view>
+            </view>
+            <view class="line">
+                <view class="">区域</view>
+                <view class="section">
+                    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+                        <view class="picker">
+                            当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="line">
+                <view class="">验证码</view>
+                <view class="line_right">
+                    <view>
+                        <input class="yanzheng" placeholder="请输入验证码" auto-focus />
+                    </view>
+                    <view class="yanzhengma">发送验证码</view>
+                </view>
+            </view>
+            <view class="line1">请在账单日至还款日之间制定还款计划，并确保信用卡内有足够的周转金余额。</view>
+        </view>
+    </view>
+    <view class="priceInfo">
+        <view class="priceInfo_left">
+            <view class="span">支付总额</view>
+            <view class="price">￥0</view>
+        </view>
+        <view class="priceInfo_right">
+            <view class="detail">账单明细</view>
+            <view>
+                <image class="{{direction === true?'up':'down'}}" bind:tap="detail" src="https://www.kzhapp.cn/Imgs/webchat/images/personalCenter/jiantou2.png"></image>
+            </view>
+            <view class="determine_button">确认计划</view>
+        </view>
+    </view>
+</view>

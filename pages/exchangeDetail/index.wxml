@@ -1,0 +1,35 @@
+<view class="exchangeDetail">
+    <!-- 表格 -->
+    <view class="DetailTable">
+        <view class="tableTh">
+            <view class="tableThNum tableFont">积分数</view>
+            <view class="tableThshangpin tableFont">积分商品</view>
+            <view class="tableThcishu tableFont">兑换次数</view>
+            <view class="tableThprice tableFont">回购价</view>
+        </view>
+        <view class="tableBody">
+            <view class="tableTr" wx:for="{{tableTrList}}" wx:key="index">
+                <view class="tableThNum tableFont textRed">{{item.souce}}</view>
+                <view class="tableThshangpin tableFont">{{item.name}}</view>
+                <view class="tableThcishu tableFont">{{item.count}}</view>
+                <view class="tableThprice tableFont textRed">{{item.merchantPrice}}</view>
+            </view>
+        </view>
+    </view>
+    <!-- 步骤流程 -->
+    <view class="processView">
+        <image  id="image" class="processImg" src="{{imgHttp}}{{stepImg}}" mode="widthFix"></image>
+    </view>
+    <!-- 底部 -->
+    <view class="bottomView">
+        <view class="bottomLeft">
+            <image class="kefuphone" src="https://www.kzhapp.cn/Imgs/webchat/images/exchange/kefu.png"></image>
+            <text class="zixuntext">
+                咨询服务
+            </text>
+        </view>
+        <view class="bottomRight" bind:tap="onfillDeclartion" data-item="{{tableTrList}}">
+            自主报单
+        </view>
+    </view>
+</view>

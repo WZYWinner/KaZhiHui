@@ -1,0 +1,148 @@
+page {
+    background-color: #eee;
+}
+
+.reservaPlan {
+    width: calc(100% - 50px);
+    margin: 20px auto;
+}
+
+.planList {
+    width: 100%;
+}
+
+.van-tabs__wrap {
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+
+.van-tab__pane {
+    width: 100% !important;
+    height: 515px !important;
+    background-color: #fff !important;
+    padding: 0 15px;
+}
+
+.van-tabs__line {
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+
+.van-tabs__nav--card .van-tab.van-tab--active {
+    color: #fff;
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+/* 列表页 */
+.noStartView{
+    width: 100%;
+}
+.noStartNoList{
+    width: 100%;
+    text-align: center;
+    margin-top: 160px;
+}
+.nolistImg{
+    width: 65px;
+    height: 65px;
+}
+.ListImg{
+    width: 100%;
+    height: 100px;
+}
+.bankImg{
+    width: 40px;
+    height: 40px;
+}
+.img{
+    width: 100%;
+    height: 140px;
+}
+.content{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+.logo{
+    width: 40px;
+    height: 30px;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.text span{
+    display: block;
+    color: white;
+    font-size: 13px;
+}
+.text p{
+    display: block;
+    color: white;
+    font-size: 11px;
+}
+.right{
+    margin-left: 20px;
+    font-size: 12px;
+    border: white 1px solid;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.yinlian{
+    width: 35px;
+    height: 25px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+}
+.bottom{
+    margin-top: 40px;
+    display: flex;
+}
+.date{
+    margin-left: 10px;
+}
+.date_top{
+    font-size: 9px;
+    color: white;
+}
+.date_top span{
+    font-size: 12px;
+}
+.date_bottom{
+    display: flex;
+    margin-top: 2px;
+}
+.huankuan{
+    font-size: 9px;
+    color: white;
+    margin-left: 45px;
+}
+.cardInfo{
+    position: relative;
+}
+.addNewCard{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: #CCB895;
+    font-size: 18px;
+    margin: 0 auto;
+}
+.planList{
+    padding-bottom: 80px;
+}
+.choose{
+    font-size: 15px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+    border-bottom: 1px solid lightgray;
+}

@@ -1,0 +1,19 @@
+<view class="withdrawalAccountAdd" hover-class="none" hover-stop-propagation="false">
+    <van-cell-group>
+  <van-cell title="姓名" value="{{userInfo.name}}" />
+  <van-field
+    label="支付宝账号"
+    input-align="right"
+    placeholder="请输入支付宝账号"
+    value="{{CardInfo}}"
+    bind:change="CardInfochange"
+  />
+</van-cell-group>
+
+
+    <button class="txButton" bind:tap="commit">
+        提交
+    </button>
+
+        
+</view>

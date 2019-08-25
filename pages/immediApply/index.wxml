@@ -1,0 +1,12 @@
+<view class="immediApply">
+    <!-- <van-cell-group> -->
+    <van-field value="{{ userName }}" placeholder="请输入用户姓名" bind:change="onuserNameChange" />
+    <van-field value="{{ userIdentity }}" placeholder="请输入用户身份证号码" bind:change="onuserIdentityChange" />
+    <van-field value="{{ userPhone }}" placeholder="请输入用户手机号" bind:change="onuserPhoneChange" />
+
+    <view class="tishi">
+        提示：后续步骤填写的身份信息请与上面信息一致，否则系统检测不到办卡人身份，无法发放佣金。
+    </view>
+    <button class="nextBut" bind:tap="onNextSave">下一步</button>
+    <!-- </van-cell-group> -->
+</view>

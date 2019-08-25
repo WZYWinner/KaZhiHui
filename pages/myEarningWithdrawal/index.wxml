@@ -1,0 +1,70 @@
+<view class="myEarningWithdrawal" hover-class="none" hover-stop-propagation="false">
+    <view class="relative" hover-class="none" hover-stop-propagation="false">
+        <view>
+            <image class="cardImage" bind:tap="withdrawalAccount" src="../images/1bg_bank_cmb.png"> </image>
+            <view class="info">
+        <view class="flex">
+        <view>
+            到账用户
+        </view>
+        <view class="right"> 
+            1个工作日内到账
+        </view>
+    </view>
+    <view class="usreInfo">
+        {{userInfo.name}}({{cardList[0].accountNo}})
+    </view>
+     </view>
+        </view>
+    </view>
+<form bindsubmit="onON">
+    <view class="txInfo">
+        <view class="txInfo_top">
+            <view class="txInfo_top_left">
+                <image class="jinbi" src="../images/personalCenter/jinbi.png"> </image>
+                <view>
+                   提现金额 
+                </view>
+                <view>
+                   提现手续费3元/笔
+                </view>
+            </view>
+            <view class="txInfo_top_right" bind:tap="withdrawalRecord">
+                提现记录 >
+            </view>
+        </view>
+        
+            <view class="txInfo_bottom">
+            <view class="flex">
+               <span>￥</span>
+            <input name="money" class="input" bindinput='moneyCount' value="{{moneyVal}}" placeholder="请输入提现金额" auto-focus/> 
+            </view>
+            
+            <view class="txInfo_top_right ">
+                全部提现
+            </view>
+        </view>
+    </view>
+
+    <button class="txButton" form-type="submit" data-id="{{userInfo.id}}">
+        提现
+    </button>
+        </form>
+
+        <!-- <view class="txInfo_bottom">
+            <view class="flex">
+               <span>￥</span>
+            <input class="input" bindinput='moneyCount' placeholder="请输入提现金额" auto-focus/> 
+            </view>
+            
+            <view class="txInfo_top_right ">
+                全部提现
+            </view>
+        </view>
+    </view>
+
+    <view class="txButton">
+        提现
+    </view> -->
+    
+</view>

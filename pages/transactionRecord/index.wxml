@@ -1,0 +1,23 @@
+<view class="transactionRecord">
+    <view class="recordList" wx:for="{{recordList}}" wx:key="index">
+        <view class="timer">
+            <image class="timerImg" src="../images/merchantReceipt/recodetimer.png"></image>
+            提交时间：{{item.CreateTime}}
+        </view>
+        <view class="listCenter">
+            <view class="CenterLeft">
+                <image class="kahaoImg" src="../images/merchantReceipt/recodekahao.png"></image>
+                卡号：{{item.CreditCardNo}}
+            </view>
+            <view class="CenterRight">
+                ￥{{item.Amount}}
+            </view>
+        </view>
+        <view class="listBottom">
+            <view class="bottomLeft">
+                订单号：{{item.OrderId}}
+            </view>
+            <button class="confirm">已确认</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,160 @@
+<view class="reservaPlan">
+    <view class="planList">
+        <van-tabs active="{{ planActive }}" bind:change="onplanChange" color="bisque" line-width="75">
+            <van-tab title="未开始">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{noStartList}}">
+                        
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="执行中">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{implementList}}">
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="已完成">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{finishList}}">
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+            <van-tab title="已失败">
+                <view class="noStartView">
+                    <view class="noStartList" wx:if="{{failList}}">
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                        <view class="">dsf</view>
+                    </view>
+                    <view class="noStartNoList" wx:else>
+                        <image class="nolistImg" src="../images/nolistImg.png"></image>
+                    </view>
+                </view>
+            </van-tab>
+        </van-tabs>
+    </view>
+</view>

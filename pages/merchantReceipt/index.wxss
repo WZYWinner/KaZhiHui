@@ -1,0 +1,142 @@
+.merchantReceipt{
+    width: 100%;
+}
+.topBackView{
+    width: 100%;
+    height: 165px;
+    position: relative;
+    z-index: 1;
+    /* border: 1px solid #999;
+    box-sizing: border-box; */
+}
+.topBackImg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* 收款通道列表 */
+.passagewayView{
+    width: calc(100% - 30px);
+    margin: 0px auto;
+    margin-top: -45px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+.passagewayList{
+    width: 100%;
+    height: 160px;
+    margin-top: 15px;
+    border-radius: 5px;
+    position: relative;
+    /* border: 1px solid #999;
+    box-sizing: border-box; */
+}
+.passageBackImg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.listTop{
+    width: 100%;
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    height: 40px;
+    z-index: 1;
+}
+.listTopImg{
+    width: 60px;
+    height: 40px;
+    margin-left: 15px;
+    position: relative;
+    top: 0;
+}
+.wayTitle{
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    width: 118px;
+    margin-left: 11px;
+    /* 多余字省略号显示 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+}
+.supportBank{
+    font-size: 11px;
+    width: 100px;
+    text-align: center;
+    height: 19px;
+    line-height: 19px;
+    background-color: bisque;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    border-radius: 4px;
+}
+.leftJian{
+    width: 12px;
+    height: 12px;
+    position: relative;
+    left: 3px;
+    top: 2px;
+}
+.listBottom{
+    width: calc(100% - 30px);
+    position: absolute;
+    bottom: 16px;
+    left: 18px;
+    font-size: 14px;
+    height: 60px;
+    /* border: 1px solid rgb(190, 53, 53);
+    box-sizing: border-box; */
+    z-index: 1;
+}
+.detailText{
+    width: 195px;
+    color: #fff;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp:3; 
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    /* position: absolute;
+    bottom: 20px; */
+}
+.reservaPlan{
+    font-size: 11px;
+    width: 100px;
+    text-align: center;
+    height: 19px;
+    line-height: 19px;
+    background-color: bisque;
+    position: absolute;
+    right: 3px;
+    bottom: 12px;
+    border-radius: 4px;
+}
+.TransactionRecord{
+    width: 20px;
+    height: 90px;
+    padding: 0 2px;
+    color: #eee;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 10px;
+    right: 0;
+    padding-top: 10px;
+    border-radius: 3px 0 0 3px;
+    z-index: 100;
+    font-size: 14px;
+}

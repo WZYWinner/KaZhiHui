@@ -1,0 +1,11 @@
+<view class="submitText">
+    <van-field value="{{ message }}" type="textarea" placeholder="编辑文本" autosize bind:change="onmessageChange" />
+    <!-- 提示 -->
+    <view class="tishiView">
+        <view class="tishi">请勿提交随意的文本增加审核小姐姐的负担哦</view>
+        <view class="tishi">文本提交后，使用权归卡智汇所有</view>
+    </view>
+    <view class="declarSave">
+        <button class="saveBut" bind:tap="onSave">提交</button>
+    </view>
+</view>

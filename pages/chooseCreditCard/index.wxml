@@ -1,0 +1,25 @@
+<view class="addDebitCardView">
+    <van-dialog use-slot title="验证码" show-cancel-button show="{{ codeShow }}" bind:close="jihuoClose" bind:confirm="onquerenjihuo" cancelButtonText="关闭" confirmButtonText="确认激活">
+        <van-field value="{{ smscode }}" label="验证码" placeholder="请输入验证码" bind:change="onCodeChange" />
+    </van-dialog>
+    <!-- 添加借记卡 -->
+    <view class="addDebitCardBtn" bind:tap="onaddDebitCard">添加信用卡</view>
+    <!-- 信用卡列表 -->
+    <!-- IsBind 激活 -->
+    <view class="addDebitCardList" wx:for="{{codeList}}" wx:key="index" data-id="{{item.ID}}" data-bankaccountno="{{item.BankAccountNo}}" data-name="{{item.BankName}}" data-mobile="{{item.Mobile}}" bind:tap="onshannghuReceivables">
+        <view class="noBind" wx:if="{{!item.IsBind}}" data-id="{{item.ID}}" data-bankaccountno="{{item.BankAccountNo}}" data-name="{{item.BankName}}" data-mobile="{{item.Mobile}}" catch:tap="onjihuo">
+            <view class="noBindText">未激活</view>
+        </view>
+        <image class="ListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/1bg_bank_cmb.png"></image>
+        <!-- 卡信息 -->
+        <view class="listInfo">
+            <view class="bankImgView">
+                <image class="bankImg" src="https://www.kzhapp.cn/Imgs/webchat/images/backIMG.png"></image>
+            </view>
+            <view class="bankInfo">
+                <view class="bankName">{{item.BankName}}</view>
+                <view class="bankKahao">{{item.BankAccountNo}}</view>
+            </view>
+        </view>
+    </view>
+</view>

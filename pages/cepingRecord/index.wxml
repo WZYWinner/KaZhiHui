@@ -1,0 +1,24 @@
+<view class="cepingRecord">
+    <view class="" wx:if="{{recordList.length != 0}}">
+        <view class="recordList" wx:for="{{recordList}}" wx:key="index">
+            <view class="timer">
+                <image class="timerImg" src="https://www.kzhapp.cn/Imgs/webchat/images/merchantReceipt/recodetimer.png"></image>
+                提交时间：{{item.recodeTime}}
+            </view>
+            <view class="listCenter">
+                <view class="CenterLeft">
+                    <image class="kahaoImg" src="https://www.kzhapp.cn/Imgs/webchat/images/merchantReceipt/recodekahao.png"></image>
+                    卡号：{{item.kacode}}
+                </view>
+                <view class="CenterRight">￥{{item.price}}</view>
+            </view>
+            <view class="listBottom">
+                <view class="bottomLeft">订单号：{{item.recodeNum}}</view>
+                <button class="confirm">已确认</button>
+            </view>
+        </view>
+    </view>
+    <view class="noList" wx:else>
+        <image class="noListImg" src="https://www.kzhapp.cn/Imgs/webchat/images/nolistImg.png"></image>
+    </view>
+</view>

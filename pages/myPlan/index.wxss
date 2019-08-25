@@ -1,0 +1,88 @@
+page {
+    background-color: #eee;
+}
+
+.reservaPlan {
+    width: calc(100% - 50px);
+    margin: 20px auto;
+}
+
+.planList {
+    width: 100%;
+}
+
+.van-tabs__wrap {
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+
+.van-tab__pane {
+    width: 100% !important;
+    height: 515px !important;
+    background-color: #fff !important;
+    padding: 0 15px;
+}
+
+.van-tabs__line {
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+
+.van-tabs__nav--card .van-tab.van-tab--active {
+    color: #fff;
+    /* background-color: rgba(255, 255, 255, 0) !important; */
+}
+/* 列表页 */
+.noStartView{
+    width: 100%;
+}
+.noStartNoList{
+    width: 100%;
+    text-align: center;
+    margin-top: 160px;
+}
+.nolistImg{
+    width: 65px;
+    height: 65px;
+}
+.alllistview{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-bottom: 10px;
+
+}
+.danhao{
+    width: 75%;
+    font-size: 12px;
+    color: #CBB585;
+    margin-bottom: 10px;
+}
+.price{
+    width: 75%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.num{
+    width: 35%;
+    font-size: 11px;
+    color: #555;
+    margin-top: 5px;
+    position: relative;
+}
+.cishu{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.benjin{
+    width: 75%;
+    font-size: 11px;
+    margin-top: 5px;
+    color: #555;
+}
+.status{
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    font-size: 13px;
+}

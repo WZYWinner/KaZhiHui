@@ -1,0 +1,24 @@
+page{
+    background: #F2F2F3;
+}
+.text{
+    margin: 20px auto;
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+}
+.pics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    width: 180px;
+    height: 140px;
+}
+.commit{
+    margin-top: 20px;
+    width: 120px;
+    background-color: #FAF0CF;
+    border-radius: 10px;
+}

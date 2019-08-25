@@ -1,0 +1,31 @@
+<view class="withdrawalAccount" hover-class="none" hover-stop-propagation="false">
+    <view class="relative" wx:for="{{userInfo}}" wx:key="index">
+        <view>
+            <image class="cardImage" bind:tap="withdrawalAccount" data-index="{{index}}" src="../images/1bg_bank_cmb.png"> </image>
+            <view class="info">
+        <view class="flex">
+        <view>
+            支
+        </view>
+        <view class="right">
+            <view class="">
+                支付宝
+            </view>
+            <view class="">
+                {{item.accountNo}}
+            </view>
+        </view>
+        <view class="right"> 
+            <span bind:tap="delete" data-index="{{index}}">删除</span>
+        </view>
+    </view>
+     </view>
+        </view>
+    </view>
+
+    <view class="addCount" bind:tap="withdrawalAccountAdd">
+        + 添加账户
+    </view>
+      
+    
+</view>
